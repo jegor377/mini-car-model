@@ -27,13 +27,13 @@ screw_conn_diameter = 1.6;
 screw_conn_diameter_clearence = 0.4;
 
 module MotorAndWheel() {
-//    translate([18,0,0])
-//    rotate([0,90,180])
-//    {
-//        Wheel(25, 21);
-//        color("black")
-//        Torus(29/2,4);
-//    };
+    translate([18,0,0])
+    rotate([0,90,180])
+    {
+        Wheel(25, 21);
+        color("black")
+        Torus(29/2,4);
+    };
 
     rotate([0,90,0])
     Motor();
@@ -414,7 +414,7 @@ module Base() {
     BatteryWall(true);
 };
 
-//$fn = 100;
+$fn = 100;
 //$fn=50;
 
 if(!for_export) {
